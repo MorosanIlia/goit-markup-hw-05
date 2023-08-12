@@ -12,47 +12,65 @@
 <link rel="stylesheet" href="./css/styles.css"/>
 </head>
 <body class="primary-page">
-    <header class="global-header">
+  <header class="global-header container">
+    <div class="container-nav">
+      <div class="webstudio">
         <a class="logo" href="index.html">
-            <span class="web">Web</span>Studio
-   </a>
-        <nav class="main-navigation">
-            <ul>
-                <li><a href="index.html">Studio</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="contacts.html">Contacts</a></li>
-            </ul>
-        </nav>
-        <ul class="contacts">
-          <li class="email">
-            <svg width="16px" height="10px">
-              <use
-                href="./icons/symbol-defs.svg#icon-envelope-hover"
-                class="contact-active"></use>
-            </svg>
-            <a href="mailto:info@devstudio.com"
-              class="email contact contact-active"
-              >info@devstudio.com</a>
+          <span class="web">Web</span>Studio</a>
+      </div>
+      <nav class="nav-menu">
+        <ul>
+          <li>
+            <a href="index.html" class="studio-activ current-page">Studio</a>
           </li>
-          <li class="phone">
-            <svg width="10px" height="16px">
-              <use href="./icons/symbol-defs.svg#icon-smartphone"></use>
-            </svg>
-            <a href="tel:+12127724150" class="phone contact contact-active"
-              >+1 212-772-4150</a>
+          <li>
+            <a href="portfolio.html" class="portfolio-header">Portfolio</a>
+          </li>
+          <li>
+            <a href="contacts.html" class="contacts-header">Contacts</a>
           </li>
         </ul>
-    </header>
+      </nav>
+      <ul class="header-contacts">
+        <li class="mail-header-group">
+          <a
+            href="mailto:info@devstudio.com"
+            class="contacts header-contacts-mail"
+            ><span class="header-icon header-contacts-mail"
+              ><svg class="mail">
+                <use
+                  href="./icons/symbol-defs.svg#icon-envelope-hover"
+                  aria-label="Mail"
+                ></use>
+              </svg> </span
+            >info@devstudio.com</a>
+        </li>
+        <li class="phone-header-group">
+          <a href="tel:+12127724150" class="contacts header-contacts-phone"
+            ><span class="header-icon header-contacts-phone"
+              ><svg class="phone-number">
+                <use
+                  href="./icons/symbol-defs.svg#icon-smartphone"
+                  aria-label="Phone number"
+                ></use>
+              </svg> </span
+            >+1 212-772-4150</a>
+        </li>
+      </ul>
+    </div>
+  </header>
     <main>
         <section class="hero-section">
             <h1 class="hero-heading">EFFECTIVE SOLUTIONS FOR YOUR BUSINESS</h1>
-            <button class="service-button">Request our service</button>
+            <button
+            data-modal-open type="button"
+            class="request-our-service-button" > Request our service</button>
         </section>
         <section class="section-description">
           
                 <div>
                   <div class="section-description-icons">
-                  <svg>
+                  <svg width="70px" height="70px">
                     <use class="description-icons" href="./icons/symbol-defs.svg#icon-antenna"></use>
                   </svg>
                 </div>
@@ -61,7 +79,7 @@
                 </div>
                 <div>
                   <div class="section-description-icons">
-                  <svg>
+                  <svg width="70px" height="70px">
                     <use class="description-icons" href="./icons/symbol-defs.svg#icon-clock"></use>
                   </svg>
                 </div>
@@ -70,7 +88,7 @@
                 </div>
                   <div>
                     <div class="section-description-icons">
-                    <svg>
+                    <svg width="70px" height="70px">
                       <use href="./icons/symbol-defs.svg#icon-diagram"></use>
                     </svg>
                   </div>
@@ -79,7 +97,7 @@
                 </div>
                 <div>
                   <div class="section-description-icons">
-                  <svg>
+                  <svg width="70px" height="70px">
                     <use href="./icons/symbol-defs.svg#icon-astronaut"></use>
                   </svg>
                 </div>
@@ -294,11 +312,12 @@
     </footer>
     <div class="modal is-hidden" data-modal>
       <div class="modal-content">
-        <svg height="30px" width="30px" class="icon-close" data-modal-close>
-          <use href="./images/icons.svg#icon-close"></use>
+        <svg height="18px" width="18px" class="icon-close" data-modal-close>
+          <use href="./icons/symbol-defs.svg#icon-close"></use>
         </svg>          
         Continutul modalului
       </div>
     </div>
+    <script src="./js/modal.js"></script>
 </body>
 </html>     

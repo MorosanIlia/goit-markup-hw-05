@@ -12,22 +12,63 @@
 <link rel="stylesheet" href="./css/styles.css"/>
 </head>
 <body class="primary-page">
-    <header class="global-header">
-        <a class="logo" href="index.html">
-            <span class="web">Web</span>Studio
-   </a>
+  <header class="global-header container">
+    <div class="container-nav">
+      <div class="webstudio">
+        <a href="index.html" class="logo">
+          <span class="studio"><span class="web">Web</span>Studio</span>
         </a>
-        <nav class="main-navigation">
-            <ul>
-                <li><a href="index.html">Studio</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="contacts.html">Contacts</a></li>
-            </ul>
-        </nav>
-        <div class="contacts-header">
-        <a class="mailto" href="mailto:info@devstudio.com">info@devstudio.com</a>
-        <span>+1 212-772-4150</span>
+      </div>
+
+      <!-- Nav section -->
+
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="index.html" class="studio-portfolio">Studio</a></li>
+
+          <li>
+            <a
+              href="portfolio.html"
+              class="portfolio-header portfolio-activ current-page-portfolio"
+              >Portfolio</a
+            >
+          </li>
+
+          <li>
+            <a href="contacts.html" class="contacts-header">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="header-contacts">
+        <li class="mail-header-group">
+          <a
+            href="mailto:info@devstudio.com"
+            class="contacts header-contacts-mail"
+            ><span class="header-icon header-contacts-mail"
+              ><svg class="mail">
+                <use
+                  href="./images/icons.svg#icon-envelope"
+                  aria-label="Mail"
+                ></use>
+              </svg> </span
+            >info@devstudio.com</a
+          >
+        </li>
+        <li class="phone-header-group">
+          <a href="tel:+12127724150" class="contacts header-contacts-phone"
+            ><span class="header-icon header-contacts-phone"
+              ><svg class="phone-number">
+                <use
+                  href="./images/icons.svg#icon-smartphone"
+                  aria-label="Phone number"
+                ></use>
+              </svg> </span
+            >+1 212-772-4150</a
+          >
+        </li>
+      </ul>
     </div>
+  </header>
     </header>
     <main>
         <div class="buttons-portofolio">
